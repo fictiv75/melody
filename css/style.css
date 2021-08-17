@@ -1,0 +1,74 @@
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #635854;
+  border-bottom: 4px solid #3596F5;
+}
+
+.navbar {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {}
+
+.navbar-nav {}
+
+.navbar-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.navbar-link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navbar-contacts {
+  text-align: right;
+}
+
+.navbar-text {
+  display: block;
+  color: #fff;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.navbar-phone {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+}
