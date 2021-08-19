@@ -116,6 +116,10 @@ body {
   opacity: 1;
 }
 
+path.current-floor {
+  opacity: 1;
+}
+
 .counter-group {
   display: flex;
   flex-direction: column;
@@ -138,7 +142,7 @@ body {
   margin-top: 10px;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
-  font-size: 75px;
+  font-size: 125px;
   text-transform: uppercase;
   color: #635854;
 }
