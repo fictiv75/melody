@@ -138,7 +138,7 @@ path.current-floor {
 
 .counter-arrow-up {}
 
-.counter {
+.floor-counter {
   margin-top: 10px;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
@@ -161,4 +161,111 @@ path.current-floor {
   border-radius: 6px;
   border: none;
   cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s;
+}
+
+.is-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 1000px;
+  min-height: 565px;
+  background-color: #fff;
+  flex-grow: 1;
+  display: flex;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: transform 0.2s, opacity 0.2s;
+  transition-delay: 0.2s;
+}
+
+.is-open > .modal-dialog {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-image {
+  width: 60%;
+  padding: 50px;
+  background-color: #ebebeb;
+  text-align: center;
+}
+
+.flats path {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.flats path:hover {
+  opacity: 1;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.modal-info {
+  width: 40%;
+  padding: 50px 46px;
+}
+
+.flat-list {
+  padding: 0;
+  margin-top: 55px;
+  list-style: none;
+}
+
+.flat-item {
+  margin-bottom: 10px;
+}
+
+.flat-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #635854;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.flat-link:hover {
+  color: #3596F5;
+  text-decoration-line: underline;
+}
+
+.modal-alert {
+  margin-top: 56px;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 19px;
+  color: #635854;
+}
+
+.modal-close-button {
+  position: absolute;
+  right: 27px;
+  top: 38px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
 }
